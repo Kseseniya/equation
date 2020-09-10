@@ -1,0 +1,27 @@
+x=3
+x1=0 x2=-1
+x=0
+No roots
+No roots
+x=-1
+x=0
+Solutions are  all numbers
+No roots
+x1=1 x2=-1
+x1=-0.310102 x2=-1.2899
+No roots
+x=-3
+No roots
+x1=1 x2=-1.33333
+x1=-0.410546 x2=-6.08945
+x=-0.5
+x1=-1 x2=-1.66667
+x=0
+
+
+
+
+
+
+
+
