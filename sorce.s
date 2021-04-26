@@ -5,7 +5,6 @@
 ; прототипы библиотечных функций
 gets proto c
 puts proto c
-strlen proto c
 system proto c
 
 ; подключение библиотек языка Си
@@ -22,15 +21,10 @@ pauza db "pause", 0
 ; секция кода
 buf:
         .zero   1024
-.LC0:
-        .string "Enter your text:"
 main:
         push    rbp
         mov     rbp, rsp
         sub     rsp, 32
-        mov     edi, OFFSET FLAT:.LC0 ;вызов функции printf
-        mov     eax, 0
-        call    printf
         mov     QWORD PTR [rbp-32], OFFSET FLAT:buf ;указатели на строки
         mov     QWORD PTR [rbp-8], OFFSET FLAT:buf
         mov     DWORD PTR [rbp-12], 0 ;создание счётчиков 
